@@ -1,0 +1,50 @@
+Metadata-Version: 1.1
+Name: django-easy-audit
+Version: 1.1.1
+Summary: Yet another Django audit log app, hopefully the simplest one.
+Home-page: https://github.com/soynatan/django-easy-audit
+Author: Natán Calzolari
+Author-email: natancalzolari@gmail.com
+License: GPL3
+Description: =================
+        django-easy-audit
+        =================
+        
+        Yet another Django audit log app, hopefully the simplest one.
+        
+        Quick start
+        -----------
+        
+        1. Add "easyaudit" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'easyaudit',
+            ]
+        
+        2. Add django-easy-audit's middleware to your MIDDLEWARE (or MIDDLEWARE_CLASSES) setting like this::
+        
+            MIDDLEWARE = (
+                ...
+                'easyaudit.middleware.easyaudit.EasyAuditMiddleware',
+            )
+        
+        3. Run 'python manage.py migrate easyaudit' to create the audit models.
+        
+        4. That's it! Now every CRUD event on your whole project will be registered in the audit models, which you will be able to query from the Django admin app. Additionally, this app will also log all authentication events and all URLs requested.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
