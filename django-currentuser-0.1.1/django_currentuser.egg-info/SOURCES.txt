@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_currentuser/__init__.py
+django_currentuser/middleware.py
+django_currentuser.egg-info/PKG-INFO
+django_currentuser.egg-info/SOURCES.txt
+django_currentuser.egg-info/dependency_links.txt
+django_currentuser.egg-info/not-zip-safe
+django_currentuser.egg-info/requires.txt
+django_currentuser.egg-info/top_level.txt
+django_currentuser/db/__init__.py
+django_currentuser/db/models/__init__.py
+django_currentuser/db/models/fields.py
